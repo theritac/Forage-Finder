@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Forage Finder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://gallowaywildfoods.com/wp-content/uploads/2011/11/epic-mixed-tray-e1391604844645.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
+<body>
+    <!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">MAP</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="submissions.html" class="w3-button w3-block w3-black">SUBMISSION</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="forum.html" class="w3-button w3-block w3-black">FORUM</a>
+      </div>
+    </div>
+  </div>
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size: 35pt;">FORUM</span></h5>
+      <h5><span class="w3-tag">FYI!</span> Welcome to the forum page! You can initiate your own conversation about the plants and fruits you are growing or respond to others' posts!</h5>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <textarea rows=10 cols= 50 class="w3-input w3-padding-16 w3-border" type="number" placeholder="Type your content here" required name="content"></textarea>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-32px">
+        <div class="w3-center">
+          <h3>Forum Post</h3>
+          <h5>Description, <span class="w3-opacity">May 2, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <div class="w3-center" style="align-content:center">
+          <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/golden-mushrooms-square-format-marilyn-deblock.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16"> 
+          <p><strong></strong> Hello Forage Finder community! Can a gardener or forager help me identify what type of fungi this is? I'd like to know if it is edible, and if so, I would love to submit this to the Forage Finder map so that others in my community can forage more mushrooms like this one! Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+            </hr>
+          </div>
+        </div>
+    </div>
+   </div>
+
+</body>
+</html>
+  

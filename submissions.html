@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Forage Finder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://gallowaywildfoods.com/wp-content/uploads/2011/11/epic-mixed-tray-e1391604844645.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
+<body>
+    <!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">MAP</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="submissions.html" class="w3-button w3-block w3-black">SUBMISSION</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="forum.html" class="w3-button w3-block w3-black">FORUM</a>
+      </div>
+    </div>
+  </div>
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size: 35pt;">HELP YOUR COMMUNITY TODAY!</span></h5>
+      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/blush-pink-world-map-artur-szafranski.jpg" class="w3-image" style="width:100%">
+      <p><span class="w3-tag">PINPOINT!</span> Drop a pin on where the goodie is at!</p>
+      <p><strong>Please complete the boxes below about your forage find.</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name of plant/fruit" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Latitude" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Longitude" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date of Submission" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Additional notes about the plant?" required name="Message"></p>
+        <p>Upload a clear photo of your find!</p>
+        <input type="file" name="myInput" accept="image/*, .pdf" required>
+        <p><button class="w3-button w3-black" type="submit">SUBMIT YOUR FORAGE</button></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
